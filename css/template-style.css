@@ -2211,6 +2211,9 @@ nav.fixed, .fixed nav {
 nav.fixed .top-nav li a, .fixed nav .top-nav li a {
   color: #444;  
 }
+nav.fixed .top-nav li span, .fixed nav .top-nav li span {
+  color: #444;  
+}
 nav.fixed .logo-white, .fixed nav .logo-white {
   display:none;
 }
