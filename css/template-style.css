@@ -2974,6 +2974,68 @@ color:#FFF
 	background: #1c2c5a;
 	color: #fff;
 }
+.blog-detail img {
+	width: 100%;
+	max-height: auto;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+.blog-detail span.date {
+	margin-right: 15px;
+	font-size: 15px;
+}
+.blog-detail span i{
+	margin-right: 6px;
+}
+.blog-detail a.cat{
+	margin-left: 10px;
+	padding: 0px 10px;
+	border-radius: 5px;
+	background: #25aae1;
+	color: #fff;
+}
+.blog-detail a.cat:hover{
+	background: #1c2c5a;
+	color: #fff;
+}
+
+.right-list h3{
+	margin-top: 0px;
+}
+.cat-list {
+	list-style: none;
+	padding: 0px;
+}
+.cat-list li{
+	float: none;
+	padding-left: 10px;
+}
+.cat-list li a::before{
+	content: "\f006";
+    display: inline-block;
+    font-family: "mfg";
+    font-size: .8rem;
+	margin-right: 15px;
+}
+.cat-list li a{
+	color: #333;
+	font-size: 18px;
+	line-height: 45px;
+	display: block;
+}
+.cat-list li{
+	background:#FFFFFF;
+	border-bottom: 1px dashed #eaeaea
+}     
+.cat-list li:hover{
+	background:#f5f5f5;
+}
+
+
+
+
+
+
 
 
 
