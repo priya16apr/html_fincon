@@ -199,6 +199,12 @@ nav {
   min-width:100%;
   padding:0.625rem;
 }
+top-nav li span {
+  color:#fff; 
+  display:block;
+  font-size:1rem;
+  padding:1.25rem; 
+}
 .top-nav li a:hover, .aside-nav li a:hover {background:#2b4c61;}
 .top-nav li ul {display:none;}
 .top-nav li ul li,.top-nav li ul li ul li {
@@ -221,6 +227,13 @@ nav {
 }
 ul.chevron .count-number {display:none;}
 ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .aside-submenu > a:after, ul.chevron .aside-sub-submenu > a:after {
+  content:"\f004";
+  display:inline-block;
+  font-family:"mfg";
+  font-size:0.7rem;
+  margin:0 0.625rem;
+}
+ul.chevron .submenu > span:after, ul.chevron .sub-submenu > span:after,ul.chevron .aside-submenu > span:after, ul.chevron .aside-sub-submenu > span:after {
   content:"\f004";
   display:inline-block;
   font-family:"mfg";

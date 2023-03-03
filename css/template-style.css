@@ -296,6 +296,11 @@ video {
   font-size: 0.85rem;
   padding: 0.7em 1.25em;
 }
+.top-nav li span, .background-white .top-nav li span {
+  color: #002633;
+  font-size: 0.85rem;
+  padding: 0.7em 1.25em;
+}
 nav {
   border-bottom: 4px solid rgba(0, 0, 0, 0.05);
   border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -316,7 +321,14 @@ nav {
   background: #002633 none repeat scroll 0 0;
   color: rgba(255,255,255, 0.75);
 }
-ul.chevron .submenu > a::after, ul.chevron .sub-submenu > a::after, ul.chevron .aside-submenu > a::after, ul.chevron .aside-sub-submenu > a::after {
+ul.chevron .submenu > a::after,ul.chevron .submenu > span::after, ul.chevron .sub-submenu > a::after,ul.chevron .sub-submenu > span::after, ul.chevron .aside-submenu > a::after, ul.chevron .aside-sub-submenu > a::after {
+  margin: 0 0 0 0.625rem;
+}
+.top-nav li ul li span, .background-white .top-nav li ul li span, .top-nav .active-item li span {
+  background: #002633 none repeat scroll 0 0;
+  color: rgba(255,255,255, 0.75);
+}
+ul.chevron .submenu > span::after,ul.chevron .submenu > span::after, ul.chevron .sub-submenu > span::after,ul.chevron .sub-submenu > span::after, ul.chevron .aside-submenu > span::after, ul.chevron .aside-sub-submenu > span::after {
   margin: 0 0 0 0.625rem;
 }
 .top-nav ul ul a {
@@ -2314,6 +2326,20 @@ a.tab-label.active-btn, a.tab-label:hover, .background-white-hightlight a.tab-la
 -moz-transition: all 0.20s linear 0s;
 -webkit-transition: all 0.20s linear 0s;
 } 
+.top-nav li span {
+  color: #fff;
+  font-weight: 400;
+  padding: 1.5rem 1.3rem;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: all 0.20s linear 0s;
+-o-transition: all 0.20s linear 0s;
+-ms-transition: all 0.20s linear 0s;
+-moz-transition: all 0.20s linear 0s;
+-webkit-transition: all 0.20s linear 0s;
+} 
 
 .top-nav ul ul {
   background: #fff none repeat scroll 0 0;
@@ -2371,6 +2397,39 @@ a.tab-label.active-btn, a.tab-label:hover, .background-white-hightlight a.tab-la
   display: none!important; 
 }
 
+.top-nav li span {
+  position: relative;
+	display: block;
+}
+.top-nav li span::before {
+  content: '';
+  display: block;
+  margin: 0;
+  height: 2px;
+  width: 0px;
+  background: #fff;
+  transition: all 0.2s linear;
+  margin-top: 0px;
+  position: relative;
+  top: 46px;  
+}
+.top-nav li.active-item span::before {
+  content: '';
+  display: block;
+  margin: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  margin-top: 0px;
+  position: relative;
+  top: 46px;
+}
+.top-nav li span:hover::before {
+  width: 100%;
+}
+.top-nav li li span::before {
+  display: none!important; 
+}
 
 
 /* Custom form */
